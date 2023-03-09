@@ -8,8 +8,8 @@ import { useNotyf } from "@/composable/useNotyf";
  * (note that we can have multiple guards in multiple plugins)
  *
  * We can add meta to pages either by declaring them manualy in the
- * routes declaration (see /@src/router.ts)
- * or by adding a <route> tag into .vue files (see /@src/pages/sidebar/dashboards.ts)
+ * routes declaration (see @/router.ts)
+ * or by adding a <route> tag into .vue files (see @/pages/sidebar/dashboards.ts)
  *
  * <route lang="yaml">
  * meta:

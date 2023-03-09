@@ -18,7 +18,7 @@ import { createApp } from "./main";
 /**
  * We create our app and mount it when it is ready
  *
- * @see /@src/app.ts for more detailed informations
+ * @see @/main.ts for more detailed informations
  */
 
 createApp().then(async (vueApp) => {

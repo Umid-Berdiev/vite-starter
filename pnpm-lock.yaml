@@ -6,11 +6,13 @@ specifiers:
   '@intlify/unplugin-vue-i18n': ^0.9.1
   '@types/lodash': ^4.14.191
   '@types/node': ^18.14.6
+  '@types/nprogress': ^0.2.0
   '@vitejs/plugin-vue': ^4.0.0
   '@vueuse/core': ^9.13.0
   axios: ^1.3.4
   lodash: ^4.17.21
   notyf: ^3.10.0
+  nprogress: ^0.2.0
   pinia: ^2.0.33
   sass: ^1.58.3
   typescript: ^4.9.3
@@ -31,6 +33,7 @@ dependencies:
   axios: 1.3.4
   lodash: 4.17.21
   notyf: 3.10.0
+  nprogress: 0.2.0
   pinia: 2.0.33_hmuptsblhheur2tugfgucj7gc4
   unplugin-icons: 0.15.3
   vue: 3.2.47
@@ -41,6 +44,7 @@ devDependencies:
   '@iconify/vue': 4.1.0_vue@3.2.47
   '@types/lodash': 4.14.191
   '@types/node': 18.14.6
+  '@types/nprogress': 0.2.0
   '@vitejs/plugin-vue': 4.0.0_vite@4.1.4+vue@3.2.47
   sass: 1.58.3
   typescript: 4.9.5
@@ -572,6 +576,10 @@ packages:
 
   /@types/node/18.14.6:
     resolution: {integrity: sha512-93+VvleD3mXwlLI/xASjw0FzKcwzl3OdTCzm1LaRfqgS21gfFtK3zDXM5Op9TeeMsJVOaJ2VRDpT9q4Y3d0AvA==}
+    dev: true
+
+  /@types/nprogress/0.2.0:
+    resolution: {integrity: sha512-1cYJrqq9GezNFPsWTZpFut/d4CjpZqA0vhqDUPFWYKF1oIyBz5qnoYMzR+0C/T96t3ebLAC1SSnwrVOm5/j74A==}
     dev: true
 
   /@types/web-bluetooth/0.0.16:
@@ -1262,6 +1270,10 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       path-key: 3.1.1
+    dev: false
+
+  /nprogress/0.2.0:
+    resolution: {integrity: sha512-I19aIingLgR1fmhftnbWWO3dXc0hSxqHQHQb3H8m+K3TnEn/iSeTZZOyvKXWqQESMwuUVnatlCnZdLBZZt2VSA==}
     dev: false
 
   /onetime/5.1.2:
