@@ -42,10 +42,9 @@ export default defineConfig({
    */
   optimizeDeps: {
     include: [
-      "@iconify/iconify",
+      "@iconify/json",
       "@vueuse/core",
       "axios",
-      "dayjs",
       "notyf",
       "vue",
       "vue-i18n",

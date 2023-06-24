@@ -1,10 +1,10 @@
 import { createApp as createClientApp } from "vue";
 import { createPinia } from "pinia";
-import { createRouter } from "./router";
-import App from "./App.vue";
+import { createRouter } from "@/router";
 import { createApi } from "@/composable/useApi";
+import App from "@/App.vue";
 
-import "./style.css";
+import "@/assets/scss/main.scss";
 
 export type AppContext = Awaited<ReturnType<typeof createApp>>;
 export type Plugin = (clientApp: AppContext) => void | Promise<void>;
