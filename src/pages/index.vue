@@ -35,7 +35,9 @@
 
       await loginUser(values);
 
+      //@ts-ignore
       notyf.dismissAll();
+      //@ts-ignore
       notyf.success(`${t("Welcome_back")}, ${values.username?.toUpperCase()}`);
 
       if (redirect) {
@@ -48,6 +50,7 @@
     } catch (error: any) {
       Object.assign(formErrors, error.response?.data?.errors);
       error.response?.data?.errors.message &&
+        //@ts-ignore
         notyf.error(error.response?.data?.errors.message);
     } finally {
       isLoading.value = false;
@@ -55,7 +58,7 @@
   };
 
   function clearError(fieldName: string) {
-    formErrors[fieldName] = [];
+    formErrors[fieldName as keyof typeof formErrors] = [];
   }
 </script>
 
@@ -68,7 +71,7 @@
         class="login-wrapper"
         @submit.prevent="handleLogin"
       >
-        <i-feather-user style="margin-right: 1rem" color="orange" />
+        <IFeatherUser style="margin-right: 1rem" color="orange" />
         <input
           type="text"
           name="username"
@@ -79,7 +82,7 @@
         <p class="help has-text-danger">
           {{ formErrors.username[0] }}
         </p>
-        <i-feather-lock style="margin-right: 1rem" color="orange" />
+        <IFeatherLock style="margin-right: 1rem" color="orange" />
         <input
           type="password"
           name="password"
